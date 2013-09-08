@@ -5,6 +5,16 @@ img::selection    {background: transparent;}
 img::-moz-selection {background: transparent;}
 body {-webkit-tap-highlight-color: #9ff3ff;}
 
+/* All fonts
+font-family:'SackersGothicW01-Light';
+font-family:'SackersGothicW01-Medium';
+font-family:'SackersGothicW01-Heavy';
+font-family:'Volta W01 Medium';
+font-family:'Volta W01 Medium Italic';
+font-family:'Volta W01 Bold';
+font-family:'VoltaStencilW01-BoldD';
+*/
+
 /* Universal Styles */
 img {
   max-width: 100%;
@@ -23,14 +33,35 @@ body{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  background: url(images/background.jpg) repeat;
+  background: url(images/background_2.jpg) repeat;
 }
 
 #container_card{
   background: url(images/background_card.jpg) repeat;
   margin: 0 auto;
-  margin: 35px;
+  margin: 20px;
   height: 900px;
   -webkit-box-shadow:  0px 0px 20px 5px rgba(69, 69, 69, .6);
   box-shadow:  0px 0px 20px 5px rgba(69, 69, 69, .6);
+
+  .logo{
+    float: left;
+    padding: 10px 10px 10px 20px;
+
+    h3{
+      font-family:'SackersGothicW01-Medium';
+      color: #323232;
+      font-size: 35px;
+      line-height: 9px;
+
+      span {
+        font-family:'VoltaStencilW01-BoldD';
+        font-size: 50px;
+        color: rgba(113, 119, 98, .9);
+        padding-top: 10px;
+        vertical-align: bottom;
+      }
+    }
+  }
 }
+
