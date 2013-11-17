@@ -6,13 +6,13 @@ img::-moz-selection {background: transparent;}
 body {-webkit-tap-highlight-color: #9ff3ff;}
 
 /* All fonts
-font-family:'SackersGothicW01-Light';
-font-family:'SackersGothicW01-Medium';
-font-family:'SackersGothicW01-Heavy';
 font-family:'Volta W01 Medium';
 font-family:'Volta W01 Medium Italic';
 font-family:'Volta W01 Bold';
 font-family:'VoltaStencilW01-BoldD';
+font-family:'AlternateGothicW01-No1 691796';
+font-family:'AlternateGothicW01-No2 691799';
+font-family:'AlternateGothicW01-No3 691802';
 */
 
 /* Universal Styles */
@@ -22,46 +22,221 @@ img {
 
 a{
   text-decoration: none;
-  color: black;
+  color: #ffffff;
+  -webkit-transition: color .25s ease-in;
+   -moz-transition: color .25s ease-in;
+   -o-transition: color .25s ease-in;
+   -ms-transition: color .25s ease-in;
+   transition: color .25s ease-in;
+
+  &:hover{
+    color: #1c2128;
+  }
+}
+
+.clear:before, .clear:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clear:after {
+  clear: both;
 }
 
 
 body{
-  margin:0;
-  padding:0;
-  background-color: #ececec;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  background: url(images/background_2.jpg) repeat;
+  -webkit-font-smoothing: antialiased !important;
+  background-color: #ebd2b5;
 }
 
-#container_card{
-  background: url(images/background_card.jpg) repeat;
-  margin: 0 auto;
-  margin: 20px;
-  height: 900px;
-  -webkit-box-shadow:  0px 0px 20px 5px rgba(69, 69, 69, .6);
-  box-shadow:  0px 0px 20px 5px rgba(69, 69, 69, .6);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-  .logo{
-    float: left;
-    padding: 10px 10px 10px 20px;
+#top_bar{
+  height: 40px;
+  background-color: rgba(44, 54, 64, 0.98);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 
-    h3{
-      font-family:'SackersGothicW01-Medium';
-      color: #323232;
-      font-size: 35px;
-      line-height: 9px;
+  ul{
 
-      span {
-        font-family:'VoltaStencilW01-BoldD';
-        font-size: 50px;
-        color: rgba(113, 119, 98, .9);
-        padding-top: 10px;
-        vertical-align: bottom;
+    list-style: none;
+    text-align: center;
+    padding-top: 8px;
+
+      li {
+        display: inline;
+        font-family:'AlternateGothicW01-No1 691796';
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px 0 0;
+        text-transform: uppercase;
       }
     }
   }
-}
 
+ .header {
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 380px;
+  text-align: center;
+
+    .bird {
+      position: relative;
+    }
+
+    h1{
+      font-family: 'AlternateGothicW01-No1 691796';
+      font-size: 95px;
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 0px;
+      opacity: .95;
+      z-index: 99;
+      font-weight: 300;
+      position: absolute;
+      top: 195px;
+      width: 100%;
+
+      span{
+        font-family:'Volta W01 Bold';
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    h3{
+        font-family:'Volta W01 Medium';
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        line-height: 0px;
+        z-index: 99;
+        position: absolute;
+        top: 245px;
+        width: 100%;
+    }
+ }
+
+    #about {
+      background-color: #f3f3f3;
+      padding: 150px;
+      color: #303842;
+
+
+      p {
+
+        span{
+          font-size: 40px;
+          font-family:'AlternateGothicW01-No1 691796';
+          margin-bottom: 20px;
+        }
+
+        width: 700px;
+        margin: 0 auto;
+        font-family:'Volta W01 Medium';
+        line-height: 28px;
+        width: 37%;
+        float: left;
+        max-width: 650px;
+        font-size: 15px;
+        padding-right: 3%;
+      }
+
+      img{
+        float: left;
+        width: 60%;
+        border-radius: 12px;
+      }
+     }
+
+     #info{
+      background-color: #d7d5d5;
+      padding: 150px;
+
+      .music{
+        width: 60%;
+        float: left;
+
+        ul{
+        font-size: 40px;
+        font-family:'AlternateGothicW01-No1 691796';
+        margin-bottom: 20px;
+        color: #303842;
+        list-style: none;
+        margin:0;
+        padding: 0;
+        }
+
+        li{
+          margin: 10px 0 10px 0;
+          font-family:'Volta W01 Medium';
+          font-size: 18px;
+
+          .music_player{
+            margin: 15px 0 15px 0;
+          }
+        }
+
+      }
+
+      .shows{
+        background-color: #ffffff;
+        border-radius: 12px;
+        float: left;
+        width: 37%;
+        margin-left: 3%;
+        height: 300px;
+
+
+        p{
+        font-size: 30px;
+        font-family:'AlternateGothicW01-No1 691796';
+        color: #303842;
+        padding: 25px 0 0 25px;
+        text-transform: uppercase;
+        }
+
+        ul{
+          list-style: none;
+          padding: 0 0 15px 25px;
+
+          li{
+            margin: 10px 0 10px 0;
+            font-family:'Volta W01 Medium';
+            font-size: 14px;
+          }
+        }
+      }
+
+     }
+
+     #footer{
+      background-color: #303842;
+      text-align: center;
+      font-size: 35px;
+      padding: 15px;
+     }
