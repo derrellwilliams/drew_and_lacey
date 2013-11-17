@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<title>Drew & Lacey</title>
+
+	<link href="css/drew.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
+	<link href="skin/jplayer-black-and-yellow.css" rel="stylesheet" type="text/css" />
+	<link href="webfonts/ss-social.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://use.typekit.com/rco6qbq.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	 
+
+
+</head>
+<body>
+
+<div id=whitebox></div>
+
+<div id=wrapper>
+
+	<h1 id="mainName">Drew &amp; Lacey - Fine Music Since 1978</h1>
+	<div id="nav">
+		<ul>
+			<li id="ourstory" class="groupa"><a href="index.html">HOME</a></li>
+			<li id="home" class="groupa"><a href="html/drew.html"> MEET DREW </a></li>
+			<!-- Note the groupb list items are in reverse order. -->
+
+			<li id="extras" class="groupb"><a href="html/contact.html">CONTACT US</a></li>
+			<li id="contact" class="groupb"><a href="html/lacey.html"> MEET LACEY</a> </li>
+		</ul> 
+	</div> 
+	<!-- end nav -->
+
+	<div id="slides">
+		<div class="slides_container">
+			<img src="images/11.png" alt="Slide 2" width="960" height="419">
+			<a href="http://theafterbedtimesessions.com"><img src="images/19.jpg" alt="Slide 2" width="960" height="419"></a>
+			<img src="images/18.jpg" alt="Slide 2" width="960" height="419">
+			<img src="images/01.png" alt="Slide 1" width="960" height="419">
+			<img src="images/17.jpg" alt="Slide 2" width="960" height="419">
+		</div>
+		<a href="#" class="prev"><img src="images/arrow-prev.png" width="30" height="57" alt="Arrow Prev"></a>
+		<a href="#" class="next"><img src="images/arrow-next.png" width="30" height="57" alt="Arrow Next"></a>
+	</div>
+
+
+	<div id="ourmusic">
+		<div class="musichead"><h2>OUR MUSIC</h2></div>
+		<div class="music"> 
+			<div class="musictype">
+				<p>The single "Sweet Summer Love" from our latest EP.</p>
+			</div>
+
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+
+			<div class="jp-audio-container">
+				<div class="jp-audio">
+					<div class="jp-type-single">
+
+						<div id="jp_interface_1" class="jp-interface" style="margin-left: -46px;">
+							<ul class="jp-controls">
+								<li><a href="#" class="jp-play" tabindex="1">play</a></li>
+								<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+								<li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
+								<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+							</ul>
+							<div class="jp-progress-container">
+								<div class="jp-progress">
+									<div class="jp-seek-bar">
+										<div class="jp-play-bar"></div>
+									</div>
+								</div>
+							</div>
+							<div class="jp-volume-bar-container">
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="musictype">
+					The EP can be purchased <a href="http://itunes.apple.com/us/album/drew-lacey/id371920970">here!</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="tweethead">
+		<h2>OUR TWITTER</h2>
+	</div>
+
+	<div class="tweet"></div>
+	
+<p class="footer">
+		Drew & Lacey are a Nashville-based, husband and wife duo.  Their folk and bluegrass backgrounds have combined with a 
+		Nashville country vibe to create a unique sound, full of rich harmonies and stellar musicianship. Their recently recorded EP, produced  by Jason Deere, is available on iTunes.  The album demonstrates their vocal, instrumental and songwriting talent.  The two instrumentalists together play keys, fiddle, mandolin and guitar and provide an entertaining and energetic stage show.  It's this energy and musicianship that has allowed them to share the stage with  country  			superstars,  LeAnn  Rimes,  JoDee  Messina,  Due  West, as well as Ryan Shupe & the Rubberband.
+		
+		
+		
+		
+		
+		<p class= icons>
+		<a href="https://www.facebook.com/pages/drew-lacey/190065909397"i class="ss-icon ss-social-circle">Facebook</i></a>
+		<a href="http://www.youtube.com/user/amwbooking?feature=results_main6155945618"i class="ss-icon ss-social-circle">Youtube</i></a>
+		<a href="http://twitter.com/drewandlacey" i class="ss-icon ss-social-circle">Twitter</i></a>
+		</p>
+		
+		<p class=contact>
+		Contact us at Drewandlacey@gmail.com 
+		<br>
+		or give us a call at 615.594.5618
+		<br><br>
+		<span class="copyright">Copyright 2012</span>
+		</p>
+
+		
+		
+
+</div>
+
+<div id="footer">
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="js/jquery.tweet.js"></script>
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/jquery.localscroll-1.2.7-min.js"></script> 
+<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+<script src="js/jquery.jplayer.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".tweet").tweet({
+		username: "drewandlacey",
+		join_text: "auto",
+		avatar_size: 32,
+		count: 3,
+		auto_join_text_default: "we said,", 
+		auto_join_text_ed: "we",
+		auto_join_text_ing: "we were",
+		auto_join_text_reply: "we replied to",
+		auto_join_text_url: "we were checking out",
+		loading_text: "loading tweets..."
+	});
+
+	$('#slides').slides({
+		preload: true,
+		preloadImage: 'img/loading.gif',
+		play: 5000,
+		pause: 2500,
+		hoverPause: true
+	});
+
+	$('#nav').localScroll({duration:800});
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				m4a: "images/sweetsummer.m4a",
+				oga: "images/sweetsummer.ogg"
+			}).jPlayer("pause");
+		},
+		ended: function (event) {
+			$(this).jPlayer("play");
+		},
+		swfPath: "js",
+		supplied: "m4a, oga"
+	});
+});
+</script>
+</body>
+</html>

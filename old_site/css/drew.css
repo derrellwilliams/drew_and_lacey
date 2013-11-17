@@ -1,0 +1,283 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FFFFFF;
+    background-image: url("../images/background.png");
+    font-family: "nimbus-sans-condensed";
+    font-size: 16px;
+}
+a:link {
+    color: #7B7B7B;
+}
+a:visited {
+    color: #7B7B7B;
+}
+a:hover {
+    color: #000000;
+}
+a:active {
+    color: #000000;
+}
+#whitebox {
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    box-shadow: 0 3px 3px rgba(50, 50, 50, 0.17);
+    height: 20px;
+}
+#wrapper {
+    margin: 0 auto;
+    padding: 1.25em;
+    width: 960px;
+	background: url('../images/mainlogo.png') center top no-repeat;
+}
+#nav {
+    -moz-transition: all 0.5s ease 0s;
+    margin: 30px 0 0 0;
+    outline: medium none;
+    position: relative;
+	overflow: hidden;
+}
+#nav a:hover img {
+    -moz-transition: all 0.5s ease 0s;
+    opacity: 0.6;
+    outline: medium none;
+}
+#nav a:focus img {
+}
+#nav a:visited img {
+    text-decoration: none;
+}
+#nav a {
+    -moz-transition: all 0.5s ease 0s;
+    outline: medium none;
+    text-decoration: none;
+}
+#nav ul {
+    height: 100%;
+    list-style: none outside none;
+    outline: medium none;
+    padding-left: 0;
+    text-decoration: none;
+}
+#nav li {
+    height: 100%;
+}
+#nav li a {
+    display: inline-block;
+    height: 100%;
+    outline: medium none;
+    vertical-align: middle;
+    width: 100%;
+}
+#nav ul .groupa {
+	padding-left: 50px;
+    float: left;
+    outline: medium none;
+}
+#nav ul .groupb {
+	padding-right: 50px;
+    float: right;
+    outline: medium none;
+}
+#mainName {
+    left: -9999px;
+    position: absolute;
+    z-index: -1;
+}
+#nav h1 img {
+    display: block;
+}
+a img {
+    border: medium none;
+}
+#slides {
+    position: relative;
+    top: 53px;
+}
+.slides_container {
+    box-shadow: 0 3px 3px rgba(50, 50, 50, 0.17);
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slides_container a {
+    -moz-transition: none 0s ease 0s;
+    display: block;
+    height: 419px;
+    width: 960px;
+}
+.slides_container a img {
+    -moz-transition: none 0s ease 0s;
+    display: block;
+}
+#slides .prev {
+    display: block;
+    height: 43px;
+    left: -1px;
+    outline: medium none;
+    position: absolute;
+    top: 200px;
+    z-index: 101;
+}
+#slides .next {
+    display: block;
+    height: 43px;
+    left: 930px;
+    outline: medium none;
+    position: absolute;
+    top: 200px;
+    z-index: 101;
+}
+a.next:hover img {
+    -moz-transition: all 1s ease 0s;
+    opacity: 0.6;
+    outline: medium none;
+}
+a.prev:hover img {
+    -moz-transition: all 1s ease 0s;
+    opacity: 0.6;
+    outline: medium none;
+}
+.pagination {
+    margin: 26px auto 0;
+    width: 100px;
+}
+.pagination li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 1px;
+}
+.pagination li a {
+    background-image: url("images/pagination.png");
+    background-position: 0 0;
+    display: block;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    width: 12px;
+}
+.pagination li.current a {
+    background-position: 0 -12px;
+}
+#ourmusic {
+    display: block;
+    float: right;
+    margin-top: 20px;
+}
+.musichead {
+    height: 30px;
+    width: 475px;
+}
+.music {
+    background-color: #FFFFFF;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 3px 3px rgba(50, 50, 50, 0.17);
+    margin-top: 10px;
+    width: 475px;
+}
+.musictype {
+    padding: 10px;
+}
+.tweethead {
+    display: block;
+    height: 30px;
+    margin-top: 80px;
+    width: 475px;
+}
+.tweet, .query {
+    color: #000000;
+    font-family: "nimbus-sans-condensed";
+}
+.tweet_list {
+    background-color: #F6F6F6;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 3px 3px rgba(50, 50, 50, 0.17);
+    list-style: none outside none;
+    margin-top: 10px;
+    overflow-y: hidden;
+    padding: 0;
+    width: 475px;
+}
+.tweet_list li {
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0.5em;
+}
+.tweet_list li a {
+    color: #000000;
+}
+.tweet_list .tweet_even {
+    background-color: #FFFFFF;
+}
+.tweet_list .tweet_avatar {
+    float: left;
+    padding-right: 0.5em;
+}
+.tweet_list .tweet_avatar img {
+    vertical-align: middle;
+}
+#footer {
+    background-color: #FFFFFF;
+    background-repeat: repeat-x;
+    box-shadow: 0 -3px 3px rgba(50, 50, 50, 0.18);
+    height: 230px;
+    margin-top: 20px;
+    padding: 50px;
+}
+.jp-audio-container {
+    background: url("img/player-bg.png") no-repeat scroll 0 0 transparent;
+    margin: auto;
+}
+.jp-audio {
+    margin: auto;
+}
+
+p.footer{
+	padding-top:80px;
+	width:650px;
+	font-size:14px;
+	margin:auto;
+	float:left;
+	line-height:25px;
+	font-family: "nimbus-sans-condensed";
+	font-color:#50a2bc;
+	
+}
+
+p.icons{
+	padding-top:40px;
+	padding-left:140px;
+	font-size:40px;
+	float:left;
+	color:#50a2bc;
+	
+}
+
+p.icons a {
+	color:#50a2bc;
+}
+
+p.icons a:hover{
+	color:#fbefad;
+}
+
+p.contact{
+	font-family: "nimbus-sans-condensed";
+	font-size: 12px;
+	text-align:center;
+	float:right;
+	margin-top:-30px;
+	text-decoration:none;
+	margin-right: 16px;
+	
+	
+}
+
+.copyright{
+	font-size:10px;
+}
